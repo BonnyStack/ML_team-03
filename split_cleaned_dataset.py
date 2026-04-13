@@ -3,8 +3,11 @@ from pathlib import Path
 from openpyxl import Workbook, load_workbook
 
 
-INPUT_FILE = Path(r"C:\Users\alber\Downloads\archive\olist_merged_dataset (2).xlsx")
-OUTPUT_DIR = Path(r"C:\Users\alber\Downloads\archive\split_dataset")
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "archive"
+
+INPUT_FILE = DATA_DIR / "olist_merged_dataset (2).xlsx"
+OUTPUT_DIR = DATA_DIR / "split_dataset"
 TRAIN_RATIO = 0.8
 VALIDATION_RATIO = 0.1
 TEST_RATIO = 0.1

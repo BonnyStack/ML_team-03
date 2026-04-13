@@ -5,10 +5,12 @@ import matplotlib.pyplot as plt
 from openpyxl import load_workbook
 
 
-DEFAULT_ORIGINAL_FILE = Path(r"C:\Users\alber\Downloads\archive\olist_merged_dataset.xlsx")
-DEFAULT_CLEANED_FILE = Path(r"C:\Users\alber\Downloads\archive\olist_merged_dataset (2).xlsx")
-DEFAULT_OUTPUT_FILE = Path(r"C:\Users\alber\Downloads\archive\olist_cleanup_pie_chart.png")
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "archive"
 
+DEFAULT_ORIGINAL_FILE = DATA_DIR / "olist_merged_dataset.xlsx"
+DEFAULT_CLEANED_FILE = DATA_DIR / "olist_merged_dataset (2).xlsx"
+DEFAULT_OUTPUT_FILE = DATA_DIR / "olist_cleanup_pie_chart.png"
 
 def log(message: str) -> None:
     print(message, flush=True)

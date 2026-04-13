@@ -3,9 +3,11 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "archive"
 
-DATA_DIR = Path(r"C:\Users\alber\Downloads\archive")
 INPUT_CSV = DATA_DIR / "olist_merged_dataset.csv"
 OUTPUT_DIR = DATA_DIR / "olist_visualizations"
 SAMPLE_SIZE = 10_000

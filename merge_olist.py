@@ -2,14 +2,14 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
-
 # =========================================================
 # CONFIG
 # =========================================================
-DATA_DIR = Path(r"C:\Users\alber\Downloads\archive")
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "archive"
+
 OUTPUT_CSV = DATA_DIR / "olist_merged_dataset.csv"
 OUTPUT_XLSX = DATA_DIR / "olist_merged_dataset.xlsx"
-
 
 # =========================================================
 # HELPERS

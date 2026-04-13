@@ -4,8 +4,11 @@ import matplotlib.pyplot as plt
 from openpyxl import load_workbook
 
 
-INPUT_FILE = Path(r"C:\Users\alber\Downloads\archive\olist_merged_dataset (2).xlsx")
-OUTPUT_FILE = Path(r"C:\Users\alber\Downloads\archive\olist_is_delayed_pie_chart.png")
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "archive"
+
+INPUT_FILE = DATA_DIR / "olist_merged_dataset (2).xlsx"
+OUTPUT_FILE = DATA_DIR / "olist_is_delayed_pie_chart.png"
 TARGET_COLUMN = "is_delayed"
 
 

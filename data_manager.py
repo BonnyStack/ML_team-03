@@ -95,7 +95,6 @@ def clean_xlsx_remove_incomplete_rows(input_file: str):
     )
     log(f"Cleaned file saved here: {output_path}")
 
-
 if __name__ == "__main__":
-    file_location = r"C:\Users\alber\Downloads\archive\olist_merged_dataset.xlsx"
+    file_location = Path(__file__).resolve().parent / "archive" / "olist_merged_dataset.xlsx"
     clean_xlsx_remove_incomplete_rows(file_location)
