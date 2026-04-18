@@ -1,0 +1,2 @@
+- Log of values (because we have skewed distributions)
+- Use oversampling methods
